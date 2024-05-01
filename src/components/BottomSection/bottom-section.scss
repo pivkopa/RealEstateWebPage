@@ -1,0 +1,162 @@
+.section-bottom {
+  background-color: $bottom-section-color;
+  min-height: 1060px;
+  height: 100vh;
+
+  @include on-tablet {
+    min-height: 800px;
+  }
+
+  @include on-desktop {
+    min-height: 825px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__text {
+    position: absolute;
+    right: 25px;
+    top: 606px;
+    font-family: Commissioner, Arial;
+    color: white;
+    font-size: 16px;
+    width: 306px;
+    height: 156px;
+    padding: 0;
+    margin: 0;
+    line-height: 25.6px;
+  
+    @include on-tablet {
+      right: 0px;
+      top: 327px;
+    }
+  
+    @include on-desktop {
+      right: 81px;
+      top: 414px;
+    }
+  }
+
+  &__image--bath {
+    position: absolute;
+    z-index: 2;
+    top: 363px;
+    left: 146px;
+    width: 212px;
+      height: 131px;
+  
+    @include on-tablet {
+      top: 327px;
+      left: 195px;
+      width: 235px;
+      height: 153px;
+    }
+  
+  
+    @include on-desktop {
+      top: 511px;
+      left: 305px;
+      width: 387px;
+      height: 240px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    font-family: "Tenor sans";
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+  
+    @include on-tablet {
+      font-size: 87px;
+    }
+  
+    @include on-desktop {
+      font-size: 115px;
+    }
+  }
+
+  &__image--pool {
+    display: inline;
+    margin-top: 80px;
+    width: 262px;
+    height: 338px;
+    object-fit: contain;
+  
+    @include on-tablet {
+      margin-top: 0;
+      display: inline;
+      width: 342px;
+      height: 442px;
+      object-fit: contain;
+    }
+  
+    @include on-desktop {
+      margin-top: 0;
+      width: 534px;
+      height: 691px;
+    }
+  }
+
+  &__title--first {
+    right: 167px;
+    top: 477px;
+    z-index: 3;
+  
+    @include on-tablet {
+      right: 10px;
+      top: 90px;
+    }
+  
+    @include on-desktop {
+      right: 181px;
+      top: 151px;
+    }
+  }
+
+  &__title--second {
+    right: 50px;
+    top: 532px;
+  
+    @include on-tablet {
+      right: 0px;
+      top: 200px;
+    }
+  
+    @include on-desktop {
+      right: 138px;
+      top: 271px;
+    }
+  }
+
+  &__learn-button {
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    border: solid 1px white;
+    margin-top: 400px;
+    margin-left: 62px;
+  
+    @include on-tablet {
+      margin-top: 100px;
+      margin-left: 334px;
+    }
+  
+    @include on-desktop {
+      margin-top: 0;
+      margin-left: 0;
+      position: absolute;
+      z-index: 2;
+      top: 588px;
+      right: 407px;
+    }
+
+    &:hover {
+      background-color: $bottom-section-color;
+    }
+  }
+}

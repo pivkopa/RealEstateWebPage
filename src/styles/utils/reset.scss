@@ -1,0 +1,17 @@
+html:has(.menu__container:target) {
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}

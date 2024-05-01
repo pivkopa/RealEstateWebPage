@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals"],
+  "plugins": ["react"],
+  "rules": {
+    "max-len": ["error", { "code": 80 }],
+    "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }]
+  }
 }
