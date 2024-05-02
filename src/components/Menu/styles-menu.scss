@@ -1,9 +1,10 @@
 .menu {
-  background-color: #FDF7EE;
+  background-color: #fdf7ee;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 70px;
   height: 100vh;
 
   &__container {
@@ -23,7 +24,7 @@
       font-size: 15px;
       font-weight: 600;
       height: 59px;
-      border-bottom: 1px solid #2B2B2B;
+      border-bottom: 1px solid #2b2b2b;
       line-height: 59px;
       text-align: center;
       text-transform: uppercase;
@@ -54,6 +55,10 @@
     text-decoration: none;
     color: black;
     font-weight: 600;
+
+    &--selected {
+      color: gray;
+    }
   }
 
   &__container:target {

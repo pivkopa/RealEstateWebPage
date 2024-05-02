@@ -52,7 +52,6 @@
       height: 153px;
     }
   
-  
     @include on-desktop {
       top: 511px;
       left: 305px;
@@ -139,11 +138,11 @@
     background-color: transparent;
     border: solid 1px white;
     margin-top: 400px;
-    margin-left: 62px;
+    margin-left: 89px;
   
     @include on-tablet {
       margin-top: 100px;
-      margin-left: 334px;
+      margin-left: 294px;
     }
   
     @include on-desktop {

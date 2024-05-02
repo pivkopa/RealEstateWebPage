@@ -1,24 +1,20 @@
 'use client'
 
 import Image from "next/image";
-import topImage from "../../images/img-top.png";
-import topImageMobile from "../../images/img-top-mobile.png";
+import topImage from "../../../public/images/img-top.png";
+import topImageMobile from "../../../public/images/img-top-mobile.png";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ButtonSupport } from "./ButtonSupport";
 import { ButtonCollection } from "./ButtonCollection";
-
-const CUSTOR_CURSOR_START_OFFSET = -95;
-const CUSTOR_CURSOR_POSITION_OFFSET = 70;
-
-
+import { CUSTOM_CURSOR } from "@/variables/vatiables"; 
 
 export default function TopSection() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
   const moveCursor = (e: MouseEvent): void => {
     gsap.to(cursorRef.current, {
-      x: e.clientX - CUSTOR_CURSOR_POSITION_OFFSET,
+      x: e.clientX - CUSTOM_CURSOR.POSITION_OFFSET,
       y: e.clientY,
       duration: 0.3,
     });
@@ -44,8 +40,8 @@ export default function TopSection() {
 
   useEffect(() => {
     gsap.set(cursorRef.current, {
-      xPercent: CUSTOR_CURSOR_START_OFFSET,
-      yPercent: CUSTOR_CURSOR_START_OFFSET,
+      xPercent: CUSTOM_CURSOR.START_OFFSET,
+      yPercent: CUSTOM_CURSOR.START_OFFSET,
     })
 
     window.addEventListener('mousemove', moveCursor);
@@ -67,14 +63,12 @@ export default function TopSection() {
           EXPLORE
         </div>
 
-
         <h1 className="section-top__title section-top__title--first">
           <span className="section-top__title__first--transarent">
             RENT
           </span>
           / BUY
         </h1>
-
         <div className="section-top__title-container">
           <div className="section-top__button-support-border">
             <ButtonSupport 
@@ -82,11 +76,13 @@ export default function TopSection() {
               handleButtonLeave={handleButtonLeave} 
             />
           </div>
+
           <h1
             className="section-top__title section-top__title--second">
             REAL ESTATE
           </h1>
         </div>
+
         <div className="section-top__title-container">
           <h1
             className="section-top__title section-top__title--third">
@@ -114,6 +110,7 @@ export default function TopSection() {
             width={1200}
             height={140}
           />
+
           <Image
             src={topImageMobile}
             width={358}

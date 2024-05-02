@@ -1,7 +1,7 @@
 .header {
   height: 70px;
   line-height: 35px;
-  background-color: #FDF7EE;
+  background-color: #fdf7ee;
   padding-left: 25px;
   padding-right: 25px;
   position: fixed;
@@ -9,7 +9,9 @@
   right: 0;
   left: 0;
   z-index: 3;
-  transition: transform 0.5s ease, opacity 0.3s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.3s ease;
 }
 
 .header.is-hidden {
@@ -26,36 +28,36 @@
   display: none;
 
   @include on-desktop {
-  font-family: Commissioner, Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: #2B2B2B;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__list {
-    list-style-type: none;
+    font-family: Commissioner, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2b2b2b;
     display: flex;
-  }
+    justify-content: space-between;
+    align-items: center;
 
-  &__item {
-    margin-right: 32px;
-    cursor: pointer;
-
-    &--first {
-      margin-right: 64px;
+    &__list {
+      list-style-type: none;
+      display: flex;
     }
 
-    &--language {
-      border: none;
-      background-color: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: 600;
-      font-size: 12px;
+    &__item {
+      margin-right: 32px;
+      cursor: pointer;
+
+      &--first {
+        margin-right: 64px;
+      }
+
+      &--language {
+        border: none;
+        background-color: inherit;
+        color: inherit;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 12px;
+      }
     }
-  }
   }
 }
 
@@ -69,13 +71,13 @@
   max-width: 390px;
 
   @include on-tablet {
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px, 16px, 15px, 16px;
-  height: 80px;
-  max-width: 768px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px, 16px, 15px, 16px;
+    height: 80px;
+    max-width: 768px;
   }
 
   @include on-desktop {
@@ -92,7 +94,7 @@
     border: solid 2px;
     padding: 0px, 30px, 0px, 30px;
     border-radius: 10000px;
-    border-color: #F1EADE;
+    border-color: #f1eade;
     align-items: center;
     justify-content: center;
   }
@@ -103,7 +105,7 @@
     height: 50px;
     border: solid 2px;
     border-radius: 50%;
-    border-color: #F1EADE;
+    border-color: #f1eade;
     align-items: center;
     justify-content: center;
   }

@@ -1,12 +1,10 @@
 import Image from "next/image";
-import logo from "../../icons/logo.svg";
-import phone from "../../icons/Call-icon.svg";
-import close from "../../icons/icon-menu-close.svg";
+import logo from "../../../public/icons/logo.svg";
+import phone from "../../../public/icons/Call-icon.svg";
+import close from "../../../public/icons/icon-menu-close.svg";
+import MobileNav from "./MobileNav";
 
-
-
-export default function Menu() {
-  return (
+const Menu =() => (
     <>
       <div className="menu__container" id="menu">
         <header className="header">
@@ -20,6 +18,7 @@ export default function Menu() {
                 className="mobile-phone"
               />
             </a>
+
             <a href="#" className="header-mobile__logo_link">
               <Image
                 src={logo}
@@ -29,6 +28,7 @@ export default function Menu() {
                 className="mobile-logo"
               />
             </a>
+
             <a href="#" className="header-mobile__icon-link">
               <Image
                 src={close}
@@ -42,41 +42,10 @@ export default function Menu() {
         </header>
 
         <div className="menu">
-          <nav className="menu__nav">
-            <ul className="menu__nav-list">
-              <li className="menu__nav-item">
-                <a 
-                  className="menu__nav-link" 
-                  href="#recomended">
-                    for ukrainians
-                  </a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#categories">Catalog</a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#about-us">BUY</a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#contact-us">SELL</a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#contact-us">BLOG</a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#contact-us">SERVICES</a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#contact-us">About</a>
-              </li>
-              <li className="menu__nav-item">
-                <a className="menu__nav-link" href="#contact-us">Contact</a>
-              </li>
-            </ul>
-          </nav>
+          <MobileNav />
 
           <div className="menu__languages">
-            <a className="menu__lang" href="#">ENG</a>
+            <a className="menu__lang menu__lang--selected" href="#">ENG</a>
             <a className="menu__lang" href="#">RU</a>
             <a className="menu__lang" href="#">UA</a>
           </div>
@@ -84,4 +53,5 @@ export default function Menu() {
       </div>
     </>
   );
-}
+
+  export default Menu;
