@@ -12,7 +12,9 @@ const Navigation = () => (
         style={{ width: "60px", height: "100%" }}
       />
       <ul className="navigation__list">
-        <li className="navigation__item--first">FOR UKRAINIANS</li>
+        <li className="navigation__item navigation__item--first">
+          FOR UKRAINIANS
+        </li>
         <li className="navigation__item">CATALOG</li>
         <li className="navigation__item">BUY</li>
         <li className="navigation__item">SELL</li>

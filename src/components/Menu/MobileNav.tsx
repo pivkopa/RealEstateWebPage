@@ -4,31 +4,31 @@ const MobileNav = () => (
         <li className="menu__nav-item">
           <a
             className="menu__nav-link"
-            href="#recomended"
+            href="#for-ukrainians"
           >
             for ukrainians
           </a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#categories">Catalog</a>
+          <a className="menu__nav-link" href="#catalog">Catalog</a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#about-us">BUY</a>
+          <a className="menu__nav-link" href="#buy">BUY</a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#contact-us">SELL</a>
+          <a className="menu__nav-link" href="#sell">SELL</a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#contact-us">BLOG</a>
+          <a className="menu__nav-link" href="#blog">BLOG</a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#contact-us">SERVICES</a>
+          <a className="menu__nav-link" href="#services">SERVICES</a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#contact-us">About</a>
+          <a className="menu__nav-link" href="#about">About</a>
         </li>
         <li className="menu__nav-item">
-          <a className="menu__nav-link" href="#contact-us">Contact</a>
+          <a className="menu__nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
